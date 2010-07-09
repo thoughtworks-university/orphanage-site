@@ -1,34 +1,27 @@
-body{
-	background-color:black;	
+body       { background-color: black; }
+#container { 
+    background-color: green; 
+	  height: 700px; 
+	  margin: auto; 
+	  width: 700px; 
 }
-
-#container {
-	margin: auto;
-	/**padding: 15px 15px 15px 15px;*/
-    height: 700px;
-	width: 700px;
-	background-color: green;
+#header { 
+    background-color: blue; 
+    height:100px;
 }
-
-#header{
-	height:100px;
-	background-color: blue;
-}
-
-#innerContainer{
-	
-	
-}
-
 #navbar {
+  background-color: red;
 	height:50px;
-	line-height:40px;
-	background-color: red;
+	line-height:40px;	
 	padding:0px 10px 0px 0px;
 }
-
 #donate {
+  background-color: red;
 	width:100px;
-;
-    float:right;
+  float:right;
+}
+#header { color:#0af; }
+#footer { 
+    background: #0af; 
+    color:#fff;
 }
