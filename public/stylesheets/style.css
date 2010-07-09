@@ -1,0 +1,34 @@
+body{
+	background-color:black;	
+}
+
+#container {
+	margin: auto;
+	/**padding: 15px 15px 15px 15px;*/
+    height: 700px;
+	width: 700px;
+	background-color: green;
+}
+
+#header{
+	height:100px;
+	background-color: blue;
+}
+
+#innerContainer{
+	
+	
+}
+
+#navbar {
+	height:50px;
+	line-height:40px;
+	background-color: red;
+	padding:0px 10px 0px 0px;
+}
+
+#donate {
+	width:100px;
+;
+    float:right;
+}
