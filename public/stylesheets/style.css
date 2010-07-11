@@ -1,9 +1,8 @@
-body       { background-color: black; }
-#container { 
-    background-color: green; 
+body       { background-color: #fff; }
+#container {  
 	  height: 700px; 
 	  margin: auto; 
-	  width: 700px; 
+	  width: 1200px; 
 }
 #header { 
     background-color: blue; 
@@ -24,4 +23,7 @@ body       { background-color: black; }
 #footer { 
     background: #0af; 
     color:#fff;
+}
+#contentContainer{
+background-color:green;
 }
