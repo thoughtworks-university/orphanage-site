@@ -1,0 +1,573 @@
+Script started on Friday 09 July 2010 08:32:36 PM IST
+]0;garima@ThoughtWorks: ~/work/angelProject/orphanage-sitegarima@ThoughtWorks:~/work/angelProject/orphanage-site$ script/server 
+=> Booting WEBrick
+=> Rails 2.3.8 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2010-07-09 20:32:52] INFO  WEBrick 1.3.1
+[2010-07-09 20:32:52] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2010-07-09 20:32:57] INFO  WEBrick::HTTPServer#start: pid=8513 port=3000
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:34:21) [GET]
+Rendering template within layouts/application
+
+ActionView::MissingTemplate (Missing template dummy/index.erb in view path app/views):
+  app/controllers/dummy_controller.rb:3:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:36:22) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 43ms (View: 42, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:11) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:18) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:32) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:32) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:32) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:32) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:33) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+^C[2010-07-09 20:37:39] INFO  going to shutdown ...
+[2010-07-09 20:37:39] INFO  WEBrick::HTTPServer#start done.
+Exiting
+^C
+]0;garima@ThoughtWorks: ~/work/angelProject/orphanage-sitegarima@ThoughtWorks:~/work/angelProject/orphanage-site$ ^C
+]0;garima@ThoughtWorks: ~/work/angelProject/orphanage-sitegarima@ThoughtWorks:~/work/angelProject/orphanage-site$ ^C
+]0;garima@ThoughtWorks: ~/work/angelProject/orphanage-sitegarima@ThoughtWorks:~/work/angelProject/orphanage-site$ script/server 
+=> Booting WEBrick
+=> Rails 2.3.8 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2010-07-09 20:37:42] INFO  WEBrick 1.3.1
+[2010-07-09 20:37:42] INFO  ruby 1.8.7 (2010-01-10) [i486-linux]
+[2010-07-09 20:37:47] INFO  WEBrick::HTTPServer#start: pid=8561 port=3000
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:48) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:37:49) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:38:06) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+
+ActionView::TemplateError (undefined local variable or method `yields' for #<ActionView::Base:0xb71ae7f0>) on line #14 of app/views/layouts/application.html.erb:
+11:       Angel's Orphanage
+12:     </div>
+13:     <div id="content">
+14:       <%= yields %>
+15:     </div>
+16:     <div id="footer">
+17:       Angel's Orphanage
+
+    app/views/layouts/application.html.erb:14
+    app/controllers/dummy_controller.rb:3:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:38:57) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:21) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:22) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:22) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:23) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:23) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:23) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:33) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:39:34) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:45:30) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:45:30) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:46:21) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:46:21) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:46:39) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:46:39) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:46:39) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:46:40) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:46:40) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:46:40) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:47:01) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:47:01) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:47:21) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 44ms (View: 42, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:47:21) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:47:22) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:47:22) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:47:23) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:47:23) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:47:23) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:47:23) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:47:23) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:47:23) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:49:23) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:49:23) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:49:24) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:49:24) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:49:24) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:49:24) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:49:24) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-09 20:49:24) [GET]
+
+ActionController::RoutingError (No route matches "/css/style.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:49:49) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 20:55:06) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+
+
+Processing DummyController#index (for 127.0.0.1 at 2010-07-09 21:01:18) [GET]
+Rendering template within layouts/application
+Rendering dummy/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/dummy]
+^C[2010-07-09 21:11:46] INFO  going to shutdown ...
+[2010-07-09 21:11:46] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;garima@ThoughtWorks: ~/work/angelProject/orphanage-sitegarima@ThoughtWorks:~/work/angelProject/orphanage-site$ ^C
+]0;garima@ThoughtWorks: ~/work/angelProject/orphanage-sitegarima@ThoughtWorks:~/work/angelProject/orphanage-site$ ^C
+]0;garima@ThoughtWorks: ~/work/angelProject/orphanage-sitegarima@ThoughtW
