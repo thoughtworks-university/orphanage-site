@@ -3,4 +3,5 @@ class StaticPagesController < ApplicationController
   def about_us; render 'about_us'; end
   def how_you_can_help; render 'how_you_can_help'; end
   def contact_us; render 'contact_us'; end
+  def test; render 'image_test'; end
 end

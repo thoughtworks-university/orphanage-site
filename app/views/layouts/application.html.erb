@@ -1,28 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>Orphanage</title>
-    <link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
-  </head> 
-  <body>
-    <div id="container"> 
-  		<div id="header">
-			  <h1>Logo</h1>
-	    </div>
-	
-	    <div id="navigation">
-			  <ul id="global-navigation">
-		      <li><a href="home">Home</a></li>
-		      <li><a href="about-us">About Angel's Orphanage</a></li>
-		      <li><a href="how-you-can-help">How You Can Help</a></li>
-		      <li><a href="contact-us">Contact Us</a></li>
-		    </ul>
-	    </div>
-		  
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>Orphanage</title>
+		<link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+		<!-- include Cycle plugin --> 
+		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script> 
+		<script type="text/javascript"> 
+			$(document).ready(function() {
+				$('.slideshow').cycle({
+					fx: 'fade' 
+				});
+			});
+		</script> 
+	</head> 
+	<body>
+		<div id="container"> 
+			<div id="header">
+				<h1>Logo</h1>
+			</div>
+
+			<div id="navigation">
+				<ul id="global-navigation">
+					<li><a href="home">Home</a></li>
+					<li><a href="about-us">About Angel's Orphanage</a></li>
+					<li><a href="how-you-can-help">How You Can Help</a></li>
+					<li><a href="contact-us">Contact Us</a></li>
+				</ul>
+			</div>
+
 			<div id="right-column">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<%= yield :right_column %>
 			</div>
 			<div id="main">
 				<%= yield %>
