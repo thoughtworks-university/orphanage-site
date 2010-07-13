@@ -5,17 +5,15 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>Orphanage</title>
     <link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
-    <link type="text/css" rel="stylesheet" href="stylesheets/tabs.css" />
-  </head>
-   
+  </head> 
   <body>
     <div id="container"> 
   		<div id="header">
 			  <h1>Logo</h1>
 	    </div>
 	
-	    <div id="navbar">
-			  <ul id="globalnav">
+	    <div id="navigation">
+			  <ul id="global-navigation">
 		      <li><a href="home">Home</a></li>
 		      <li><a href="about-us">About Angel's Orphanage</a></li>
 		      <li><a href="how-you-can-help">How You Can Help</a></li>
@@ -23,21 +21,16 @@
 		    </ul>
 	    </div>
 		  
-      <div id="contentContainer">
-        <div id="main">
-          <%= yield %>
-        </div>
-	      <div id="donate">
-			    donate stuff
-		    </div>
-	      <div id="about"> 
-	        Orphanage!
-	      </div>
-      </div>
+			<div id="right-column">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div id="main">
+				<%= yield %>
+			</div>
 
-        <div id="footer"> 
-          This is the footer
-        </div>
-    </div>
-  </body>
+			<div id="footer"> 
+				This is the footer
+			</div>
+		</div>
+	</body>
 </html>

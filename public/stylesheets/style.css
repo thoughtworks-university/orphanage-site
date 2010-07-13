@@ -1,29 +1,95 @@
-body       { background-color: #fff; }
-#container {  
-	  height: 700px; 
-	  margin: auto; 
-	  width: 1200px; 
+body { 
+	margin: 0;
+	padding: 0;
+	font-family: arial,helvetica,clean,sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 8px 0;
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+}
+
+#container {
+	margin: 0 auto; 
+	width: 950px; 
+	background-color: #f5f5f5;
+}
+
 #header { 
-    background-color: blue; 
-    height:100px;
+  background-color: blue; 
+	color: white;
+  height: 100px;
 }
-#navbar {
-  background-color: red;
-	height:50px;
-	line-height:40px;	
-	padding:0px 10px 0px 0px;
+
+#navigation {
+  background-color: blue;
 }
-#donate {
-  background-color: red;
-	width:100px;
-  float:right;
+
+#main {
+	padding: 30px 10px;
 }
-#header { color:#0af; }
+
+#right-column {
+  background-color: #bfe2ff;
+	width: 250px;
+	padding: 10px;
+	float: right;
+}
+
 #footer { 
-    background: #0af; 
-    color:#fff;
+  background: blue; 
+  color: #fff;
+	clear: both;
 }
-#contentContainer{
-background-color:green;
+
+#global-navigation {
+	position:relative;
+	float:center;
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style:none;
+	line-height:1em;
+}
+
+#global-navigation li {
+	float:left;
+	margin:0;
+	padding:0;
+	width:25%;
+}
+
+#global-navigation a {
+	display:block;
+	color:#444;
+	text-decoration:none;
+	font-weight:bold;
+	background:#ddd;
+	margin:0;
+	padding:0.25em 1em;
+	border-left:1px solid #fff;
+	border-top:1px solid #fff;
+	border-right:1px solid #aaa;
+}
+
+#global-navigation a:hover,
+#global-navigation a:active,
+#global-navigation a.here:link,
+#global-navigation a.here:visited {
+	background:#bbb;
+}
+
+#global-navigation a.here:link,
+#global-navigation a.here:visited {
+	position:relative;
+	z-index:102;
 }
