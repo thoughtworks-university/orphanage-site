@@ -1,8 +1,3 @@
-<style type="text/css"> 
-	.slideshow { height: 232px; width: 232px; margin: auto }
-	.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
-</style> 
-
 <% content_for(:right_column) do %>
 <div class="slideshow"> 
 	<% Dir[RAILS_ROOT+'/public/images/*.jpg'].each do |pic| %>
