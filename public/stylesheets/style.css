@@ -27,7 +27,8 @@ body {
 #header { 
   background-color: blue; 
 	color: white;
-  height: 100px;
+  height: 80px;
+	padding: 10px;
 }
 
 #navigation {
@@ -50,6 +51,19 @@ body {
   background: blue; 
   color: #fff;
 	clear: both;
+	text-align: center;
+}
+
+.slideshow { 
+	height: 232px; 
+	width: 232px; 
+	margin: auto 
+}
+
+.slideshow img { 
+	padding: 15px; 
+	border: 1px solid #ccc; 
+	background-color: #eee; 
 }
 
 #global-navigation {
