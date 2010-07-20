@@ -3,14 +3,26 @@
 	.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
 </style> 
 
-<% content_for(:right_column) do %>
-<div class="slideshow"> 
-	<% Dir[RAILS_ROOT+'/public/images/*.jpg'].each do |pic| %>
-		<img src="/images/<%= File.basename(pic) %>" width="200" height="200" />
-	<% end %>	
+<div id='pic_container'>
+	<% content_for(:right_column) do %>
+		<div class="slideshow"> 
+
+			<img src="/images/<%= File.basename(@images.shift) %>" width="200" height="200" />
+
+			<% @images.each do |pic| %>
+				<img style="visibility: hidden;" src="/images/<%= File.basename(pic) %>" width="200" height="200" />
+			<% end %>	
+		</div>
+		<div id='img_caption'></div>
+	<% end %>
 </div>
-<% end %>
+
+<script type="text/javascript">
+	var captions = <%= @captionsArray %>;
+</script>
+</head>
 
 <p>
-	Hello world.....
+Hello world.....
 </p>
+
