@@ -1,18 +1,16 @@
+<% content_for(:page_identifier) do %>contact_us<% end %>
+
 <% content_for(:right_column) do %>
-<div class="slideshow"> 
-	<% Dir[RAILS_ROOT+'/public/images/*.jpg'].each do |pic| %>
-		<img src="/images/<%= File.basename(pic) %>" width="200" height="200" />
-	<% end %>	
-</div>
+	<div class="slideshow"> 
+		<% @photo_set.each do |photo| %>
+			<div style="text-align: center">
+				<img src="<%= photo.path %>" width="200" height="200" />
+				<span><%= photo.caption %></span>
+			</div>
+		<% end %>	
+	</div>
 <% end %>
 
-<h2>Contact Us</h2>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<% content_for(:main_content) do %>
+	<h2>Contact Us</h2>
+<% end %>
