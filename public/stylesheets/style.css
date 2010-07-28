@@ -38,8 +38,8 @@ p {
 #contact {
 	font-size:12px;
 	float:right;
-	padding:10px;
-	width:20%;
+	padding:5px;
+	width:25%;
 	text-align:center;
 }
 
@@ -136,6 +136,11 @@ p {
 	z-index:102;
 }
 
+.emphasis {
+	font-weight:bold;
+	margin-bottom:3px;
+}
+
 ------ HISTORY -------
 
 #history {
@@ -153,4 +158,3 @@ p {
 
 .slideshow { height: 232px; width: 232px; margin: auto }
 .slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
--
