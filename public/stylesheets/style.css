@@ -37,12 +37,14 @@ p {
 #contact {
 	font-size: 12px;
 	float: right;
-	padding: 10px;
-	width: 20%;
+	padding: 5px;
+	width: 25%;
 	text-align: center;
 }
 
 #page-content {
+	width: 100%;
+	clear: both;
 	min-height: 300px;
 }
 
@@ -95,6 +97,7 @@ p {
 
 .slideshow img { 
 	padding: 15px;  
+	border: 1px solid #ccc;
 }
 
 #global-navigation {
@@ -138,6 +141,11 @@ p {
 #global-navigation a.here:visited {
 	position: relative;
 	z-index: 102;
+}
+
+.emphasis {
+	font-weight:bold;
+	margin-bottom:3px;
 }
 
 /*------ HISTORY -------*/
