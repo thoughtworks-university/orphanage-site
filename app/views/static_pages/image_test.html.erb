@@ -4,7 +4,7 @@
 </style> 
 
 <div id='pic_container'>
-	<% content_for(:right_column) do %>
+	<% content_for(:main_content) do %>
 		<div class="slideshow"> 
 
 			<img src="/images/<%= File.basename(@images.shift) %>" width="200" height="200" />

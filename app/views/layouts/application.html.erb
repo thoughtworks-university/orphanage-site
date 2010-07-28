@@ -6,7 +6,6 @@
 		<title>Orphanage</title>
 		<link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
-		<script type="text/javascript" src="javascripts/slideshow.js"></script> 
 		<!-- include Cycle plugin --> 
 		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script> 
 		<script type="text/javascript"> 
@@ -20,27 +19,40 @@
 	<body>
 		<div id="container"> 
 			<div id="header">
-				<h1>Logo</h1>
+				<h1 id="logo">Logo</h1>
+				<div id="contact">
+					<div>E-mail</div>
+					<div>Phone</div>
+					<div>Address</div>
+					<div>Bangalore, Karnataka</div>
+				</div>
 			</div>
 
 			<div id="navigation">
 				<ul id="global-navigation">
 					<li><a href="home">Home</a></li>
-					<li><a href="about-us">About Angel's Orphanage</a></li>
+					<li><a href="about-us">About Us</a></li>
 					<li><a href="how-you-can-help">How You Can Help</a></li>
-					<li><a href="contact-us">Contact Us</a></li>
+					<li><a href="contact-us">Donate</a></li>
 				</ul>
 			</div>
 
-			<div id="right-column">
-				<%= yield :right_column %>
+			<div id="read-more">
+				<%= yield :read_more %>
 			</div>
-			<div id="main">
-				<%= yield %>
+
+			<div id="page-content">
+				<div id="right-column">
+					<%= yield :right_column %>
+				</div>
+			
+				<div id="main">
+					<%= yield :main_content %>
+				</div>
 			</div>
 
 			<div id="footer"> 
-				This is the footer
+				Contact Us | Privacy | Help
 			</div>
 		</div>
 	</body>
