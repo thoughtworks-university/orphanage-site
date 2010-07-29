@@ -1,3 +1,21 @@
+<div id='pic_container'>
+	<% content_for(:right_column) do %>
+		<div class="slideshow"> 
+
+			<img src="/images/<%= File.basename(@images.shift) %>" width="200" height="200" />
+
+			<% @images.each do |pic| %>
+				<img style="visibility: hidden;" src="/images/<%= File.basename(pic) %>" width="200" height="200" />
+			<% end %>	
+		</div>
+		<div id='img_caption'></div>
+	<% end %>
+
+<script type="text/javascript">
+	var captions = <%= @captionsArray %>;
+</script>
+
+<% content_for(:main_content ) do %>
 <h2>History</h2>
 
 <div id="history">
@@ -51,3 +69,4 @@
 		them and went to the hospital anyway – what other choice is there?”
 	</div>
 </div>
+<% end %>
