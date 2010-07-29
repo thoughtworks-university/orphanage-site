@@ -1,0 +1,50 @@
+<% content_for(:page_identifier) do %>donate<% end %>
+
+<% content_for(:main_content) do %>
+<p>Wish List</p>
+
+<div>Donations in the form of drop-offs are always welcome, provided they are in good condition.</div>
+
+<div> Our Wish List </div>
+
+<ul>
+<li>All children’s clothes</li>
+<li>Shoes and sandals of all sizes</li>
+<li>Story books in English (all levels)</li>
+<li>Art supplies and projects (stationary, pencils, pens, crayons, paint)</li>
+<li>Toiletries (shampoos, detergents, soaps)</li>
+</ul>
+
+<div>For School</div>
+<ul>
+	<li>All kinds of books in English, Kannada, or Hindi</li>
+	<li>Educational toys</li>
+	<li>Uniforms</li>
+</ul>
+
+<div> For our Health </div>
+<ul>
+	<li> Medicines </li>
+	<li> Band-Aids and bandages </li>
+</ul>
+
+<div> How Donations Are Used </div>
+<div> It costs about 500 rupees to support a child each month. That’s 16.6 rupees a day or 6,000 rupees a year, 
+	and it covers the child’s education, food, clothing, and medical supplies.
+</div>
+<% end %>
+
+	<% content_for(:right_column) do %>
+		<div class="slideshow"> 
+			<% @photo_set.each do |photo| %>
+				<div style="text-align: center">
+					<img src="<%= photo.path %>" width="200" height="200" />
+					<span><%= photo.caption %></span>
+				</div>
+			<% end %>	
+		</div>
+	<% end %>
+
+<script type="text/javascript">
+	var captions = <%= @captionsArray %>;
+</script>
