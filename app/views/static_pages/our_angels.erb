@@ -1,14 +1,14 @@
-<div id='pic_container'>
+<% content_for(:page_identifier) do %>our_angels<% end %>
+
 	<% content_for(:right_column) do %>
 		<div class="slideshow"> 
-
-			<img src="/images/<%= File.basename(@images.shift) %>" width="200" height="200" />
-
-			<% @images.each do |pic| %>
-				<img style="visibility: hidden;" src="/images/<%= File.basename(pic) %>" width="200" height="200" />
+			<% @photo_set.each do |photo| %>
+				<div style="text-align: center">
+					<img src="<%= photo.path %>" width="200" height="200" />
+					<span><%= photo.caption %></span>
+				</div>
 			<% end %>	
 		</div>
-		<div id='img_caption'></div>
 	<% end %>
 
 <script type="text/javascript">
