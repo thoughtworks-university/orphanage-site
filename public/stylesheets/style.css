@@ -22,7 +22,7 @@ p {
 #header { 
   background-color: #680000; 
   color: white;
-	height: 80px;
+  height: 80px;
   padding: 10px;
 }
 
@@ -32,13 +32,21 @@ p {
 
 #logo {
 	float: left;
+	width: 15%;
+}
+
+#title {
+	float: left;
+	font-size: 42px;
+	font-weight:bold;
+	padding: 15px;
+	margin-right:15px;
 }
 
 #contact {
 	font-size: 12px;
 	float: right;
 	padding: 5px;
-	width: 25%;
 	text-align: center;
 }
 
