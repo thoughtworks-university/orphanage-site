@@ -34,6 +34,11 @@ class StaticPagesController < ApplicationController
 	 	render 'our_lives'
  	end
  	
+ 	def donate
+		@photo_set = PhotoSet.find(:home)
+	 	render 'donate'
+ 	end
+ 	
   def test
 		@photo_set = PhotoSet.find(:home)
 	 	render 'image_test'

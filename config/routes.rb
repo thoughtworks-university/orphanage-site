@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'history', :controller => 'static_pages', :action => 'history'
   map.connect 'our-angels', :controller => 'static_pages', :action => 'our_angels'
   map.connect 'our-lives', :controller => 'static_pages', :action => 'our_lives'
+  map.connect 'donate', :controller => 'static_pages', :action => 'donate'
   map.connect 'test', :controller => 'static_pages', :action => 'test'
 
 end
