@@ -64,6 +64,7 @@ p {
 }
 
 #more {
+	font-size: 16px;
 	font-weight: bold;
 	margin: 40px 10px 0 10px;
 	padding: 10px;
@@ -81,8 +82,19 @@ p {
 	font-style: bold;
 }
 
+#at-a-glance h2 {
+	font-style: bold;
+	font-size: 16px;
+	text-align: center;
+	color: #680000;
+}
+
 #at-a-glance ul {
 	padding: 0px 25px;
+}
+
+#at-a-glance li {
+	font-size: 14px;
 }
 
 #footer { 
