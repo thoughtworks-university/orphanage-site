@@ -1,17 +1,13 @@
 body { 
-	font-family: arial,helvetica,clean,sans-serif;
+	font-family: arial, helvetica, clean, sans-serif;
 	background-color: #505050;
 	margin: 20px;
-	color: #000;
+	color: black;
 	font-size: 14px;
 }
 
 h1, h2, h3, h4, h5 {
 	color: #680000;
-}
-
-p {
-	margin-left: 5px;
 }
 
 #container {
@@ -27,27 +23,31 @@ p {
   padding: 10px;
 }
 
-#header h1 {
-	color: white;
-}
-
-#left_wing, #right_wing {
-	display: inline;
-}
-
 #title {
-	float: left;
+
 }
 
 #title h1 {
-	display: inline;
 	font-size: 3em;
 	padding-bottom: 20px;
+	color: white;
+	float: left;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+#title img {
+	display: inline;
+	float: left;
+}
+
+#title a {
+	text-decoration: none;
+	color: #fff;
 }
 
 #contact {
 	font-size: 12px;
-	float: right;
 	padding: 5px;
 	text-align: center;
 }
@@ -56,24 +56,24 @@ p {
 	width: 100%;
 	clear: both;
 	min-height: 300px;
+	padding-top: 5px;
 }
 
 #main {
-	padding: 10px;
 	margin: 10px;
 	width: 580px;
 }
 
 #more {
+	font-size: 16px;
 	font-weight: bold;
 	margin: 40px 10px 0 10px;
 	padding: 10px;
 }
 
 #right-column {
-	width: 280px;
+	width: 300px;
 	padding: 10px;
-	margin-left: 10px;
 	float: right;
 	clear: top;
 }
@@ -82,8 +82,19 @@ p {
 	font-style: bold;
 }
 
+#at-a-glance h1 {
+	font-style: bold;
+	font-size: 20px;
+	text-align: center;
+	color: #680000;
+}
+
 #at-a-glance ul {
 	padding: 0px 25px;
+}
+
+#at-a-glance li {
+	font-size: 14px;
 }
 
 #footer { 
@@ -100,7 +111,7 @@ p {
 .slideshow { 
 	height: 232px; 
 	width: 232px; 
-	background-color: white;
+	background-color: #E5E5E5;
 	border: 1px solid #ccc;
 }
 
@@ -164,6 +175,13 @@ p {
 	margin-bottom:3px;
 }
 
+.highlight_container {
+	background-color:#E5E5E5;
+	padding:10px;
+	color: #000;
+	font-size: 13px;
+}
+
 /*------ HISTORY -------*/
 
 #about_us_content a {
@@ -183,13 +201,6 @@ p {
 }
 
 /*--- How You Can Help ---*/
-#donate_by_container {
-	background-color:#fff;
-	padding:10px;
-	color: #000;
-	font-size: 13px;
-}
-
 .donate_address {
 	text-align: center;
 }

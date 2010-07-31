@@ -5,8 +5,8 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<title>Angels Orphanage</title>
 		<link type="text/css" rel="stylesheet" href="stylesheets/style.css" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
-		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script> 
+		<script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script> 
+		<script type="text/javascript" src="javascripts/jquery.cycle.min.js"></script> 
 		<script type="text/javascript"> 
 			$(document).ready(function() {
 				$('.slideshow').cycle({
@@ -19,13 +19,9 @@
 		<div id="container"> 
 			<div id="header">
 				<div id="title">
-					<img id="left-wing" src="/images/left-wing.png" alt="Left Wing" /> 
+					<img src="/images/left-wing.png" alt="Left Wing" /> 
 					<h1>Angels Orphanage</h1>
-					<img id="right-wing" src="/images/right-wing.png" alt="Right Wing" />
-				</div>
-				<div id="contact">
-					<div>E-mail: Steve_sam@056@gmail.com</div>
-					<div>Phone: (080) 65348406 – Orphanage</div>	
+					<img src="/images/right-wing.png" alt="Right Wing" />
 				</div>
 			</div>
 
@@ -33,16 +29,16 @@
 				<ul id="global-navigation">
 					<li><a href="home">Home</a></li>
 					<li><a href="about-us">About Us</a></li>
-					<li><a href="donate">How You Can Help</a></li>
-					<li><a href="how-you-can-help">Donate</a></li>
+					<li><a href="how-you-can-help">How You Can Help</a></li>
+					<li><a href="donate">Donate</a></li>
 				</ul>
 			</div>
 
-			<div id="read-more">
-				<%= yield :read_more %>
-			</div>
-
 			<div id="page-content">
+				<div id="read-more">
+					<%= yield :read_more %>
+				</div>
+					
 				<div id="right-column">
 					<%= yield :right_column %>
 				</div>
@@ -54,8 +50,12 @@
 
 			<div id="footer"> 
 				<a href="contact-us">Contact Us</a>
-				<div>Anath Ashram, Old Cemetery Road</div>
-				<div>Shivajinagar Bangalore 51</div>
+				<div id="contact">
+					<div>E-mail: steve_sam056@gmail.com</div>
+					<div>Phone: (080) 65348406 – Orphanage</div>	
+					<div>Anath Ashram, Old Cemetery Road</div>
+					<div>Shivajinagar Bangalore 51</div>
+				</div>
 			</div>
 		</div>
 	</body>
