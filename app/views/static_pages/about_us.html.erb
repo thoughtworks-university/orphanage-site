@@ -1,20 +1,35 @@
-<% content_for(:page_identifier) do %>about_us<% end %>
+<% content_for(:page_identifier) do %>about-us<% end %>
 
 <% content_for(:right_column) do %>
-	<div class="slideshow"> 
-		<% @photo_set.each do |photo| %>
-			<div style="text-align: center">
-				<img src="<%= photo.path %>" width="200" height="200" />
-				<span><%= photo.caption %></span>
-			</div>
-		<% end %>	
+	<div class="textarea">
+		<img src="images/sabinha.jpg" alt="Sabinha" />
 	</div>
 <% end %>
 
 <% content_for(:main_content) do %>
 	<div id="about_us_content">
-		<h3><a href="history">History</a></h3>
-		<h3><a href="our-angels">Our Angels</a></h3>
-		<h3><a href="our-lives">Our Lives</a></h3>
+		<ul>
+			<li><a href="#history">History</a></li>
+			<li><a href="#our-angels">Our Angels</a></li>
+			<li><a href="#our-lives">Our Lives</a></li>
+		</ul>
+		
+		<div id="history">
+			<%= render :partial => "history" %>
+		</div>
+		
+		<div id="our-angels">
+			<%= render :partial => "our_angels"%>
+		</div>
+
+		<div id="our-lives">
+			<%= render :partial => "our_lives"%>
+		</div>
 	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#about_us_content').tabs();
+		});
+	</script>
 <% end %>

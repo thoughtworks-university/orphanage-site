@@ -18,29 +18,9 @@ class StaticPagesController < ApplicationController
 		@photo_set = PhotoSet.find(:home)
 	 	render 'contact_us'
  	end
- 	
- 	def history
-		@photo_set = PhotoSet.find(:home)
-	 	render 'history'
- 	end
-
- 	def our_angels
-		@photo_set = PhotoSet.find(:home)
-	 	render 'our_angels'
- 	end
- 	
- 	def our_lives
-		@photo_set = PhotoSet.find(:home)
-	 	render 'our_lives'
- 	end
- 	
+ 	 	
  	def donate
 		@photo_set = PhotoSet.find(:home)
 	 	render 'donate'
- 	end
- 	
-  def test
-		@photo_set = PhotoSet.find(:home)
-	 	render 'image_test'
  	end
 end

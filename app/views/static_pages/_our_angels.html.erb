@@ -1,66 +1,46 @@
-<% content_for(:page_identifier) do %>our_angels<% end %>
+<h5>Angels Orphanage is home to 70 children and 5 volunteer staff. Let’s meet some of them!</h5>
 
-	<% content_for(:right_column) do %>
-		<div class="slideshow"> 
-			<% @photo_set.each do |photo| %>
-				<div style="text-align: center">
-					<img src="<%= photo.path %>" width="200" height="200" />
-					<span><%= photo.caption %></span>
-				</div>
-			<% end %>	
-		</div>
-	<% end %>
-
-<script type="text/javascript">
-	var captions = <%= @captionsArray %>;
-</script>
-
-<% content_for(:main_content ) do %>
-	<h2>Our Angels</h2>
-	<h5>Angels Orphanage is home to 70 children and 5 volunteer staff. Let’s meet some of them!</h5>
-	
-	<p class="our_angels_testimony">
+<p class="our_angels_testimony">
 	First, meet Pooja, who is a reserved, precocious 15-year old. Pooja has been at Angels Orphanage since she was an infant. 
 	She is currently a tenth grader at a nearby girls’ high school, where she studies subjects like Science, Social Studies, Math, 
 	Hindi, Gender Science, and Kannada. Her favorite subject is English, and she determined to become fluent in as many languages as she can learn.
-	
+
 	Pooja is studying hard so that she can be admitted into the military. Although she does not specifically know what she wants 
 	to do in the military,  she knows that she loves her country and wants to fight for the people she loves. As an older member of 
 	Angels Orphanage, she also helps take care of the younger children. In her free time, Pooja often stitches clothing, draws, and 
 	cleans the orphanage. Her favorite food is pops, and her favorite movie is Kadal Kanni, a Tamil film.
-	
-		<div class="quote">
-			“What we have here, not everyone else has, because so many other children do not get tuition. We are lucky here because we get nice
-	 		educations and tuitions and are well taken care of. Whatever we ask, we are given. Most importantly, they give for education, which
-	 		is important here. We are encouraged to do everything – studies, dance, sports. But we need a building, always praying for the building. 
-			Have been wanting solar for bath water. Have to get so much help for Auntie because she is alone.”
-		</div>
-	</p>
-	
-	<p class="our_angels_testimony">
+
+	<div class="quote">
+		“What we have here, not everyone else has, because so many other children do not get tuition. We are lucky here because we get nice
+ 		educations and tuitions and are well taken care of. Whatever we ask, we are given. Most importantly, they give for education, which
+ 		is important here. We are encouraged to do everything – studies, dance, sports. But we need a building, always praying for the building. 
+		Have been wanting solar for bath water. Have to get so much help for Auntie because she is alone.”
+	</div>
+</p>
+
+<p class="our_angels_testimony">
 	Next, meet Karthik, a 24-year old who has been with Angels Orphanage since the age of 10. Karthik was born in and grew up in Bangalore. After 
 	finishing his final year of high school, he went to Delhi and received his bachelor’s degree in Theology. Afterwards, he came back to Bangalore 
 	to work for Angels Orphanage and obtain his Master of Theology (M. Th.) degree. 
 
 	Karthik primarily does ministry work at the orphanage. He was raised from a Hindu background but converted to Christianity and is studying to 
 	become a pastor. He spends his days helping Sabina run the orphanage as well as leading morning and evening prayer. 
-	
-		<div class="quote">
-			“Auntie is very good. This place is very good for the children. The biggest thing we need is the infrastructure. More children are coming, but 
-			there is no room for all of us to sleep.”
-		</div>
-	</p>
-	
-	<p class="our_angels_testimony">
+
+	<div class="quote">
+		“Auntie is very good. This place is very good for the children. The biggest thing we need is the infrastructure. More children are coming, but 
+		there is no room for all of us to sleep.”
+	</div>
+</p>
+
+<p class="our_angels_testimony">
 	Last but not least, meet Paval, who is 14 years old. Originally from Sevanagar, Paval has been with Angels Orphans for nine years. Paval’s favorite 
 	thing to do is play cricket. His dream is to one day play cricket professionally, and his hero is Lasith Malinga, a famous Sri Lankan cricketer.  
 	Some of Paval’s other hobbies include drawing and painting
-	
+
 	Paval is a 9th grader at a local boys’ high school. His favorite subject is biology because he likes to learn about who we are as humans. He also 
 	loves to watch movies, and his favorite movie is Terminator. 
-	
-		<div class="quote">
-			“I have been at Angels Orphans for 9 years. I am proud to be here. Because I am here, I get the opportunity to study.”
-		</div>
-	</p>
-<% end %>
+
+	<div class="quote">
+		“I have been at Angels Orphans for 9 years. I am proud to be here. Because I am here, I get the opportunity to study.”
+	</div>
+</p>

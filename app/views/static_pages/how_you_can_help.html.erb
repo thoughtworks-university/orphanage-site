@@ -1,46 +1,42 @@
-<% content_for(:page_identifier) do %>donate<% end %>
+<% content_for(:page_identifier) do %>how-you-can-help<% end %>
 
 <% content_for(:main_content) do %>
-<p>Wish List</p>
+<div class="textarea">
+	<h2>Wish List</h2>
 
-<div>Donations in the form of drop-offs are always welcome, provided they are in good condition.</div>
+	<p>Donations in the form of drop-offs are always welcome, provided they are in good condition. </p>
 
-<div> Our Wish List </div>
+	<h5>Our Wish List:</h5>
+	<ul>
+		<li>All children’s clothes</li>
+		<li>Shoes and sandals of all sizes</li>
+		<li>Story books in English (all levels)</li>
+		<li>Art supplies and projects (stationary, pencils, pens, crayons, paint)</li>
+		<li>Toiletries (shampoos, detergents, soaps)</li>
+	</ul>
 
-<ul>
-<li>All children’s clothes</li>
-<li>Shoes and sandals of all sizes</li>
-<li>Story books in English (all levels)</li>
-<li>Art supplies and projects (stationary, pencils, pens, crayons, paint)</li>
-<li>Toiletries (shampoos, detergents, soaps)</li>
-</ul>
+	<h5>For School:</h5>
+	<ul>
+		<li>All kinds of books in English, Kannada, or Hindi</li>
+		<li>Educational toys</li>
+		<li>Uniforms</li>
+	</ul>
 
-<div>For School</div>
-<ul>
-	<li>All kinds of books in English, Kannada, or Hindi</li>
-	<li>Educational toys</li>
-	<li>Uniforms</li>
-</ul>
+	<h5>For Our Health:</h5>
+	<ul>
+		<li>Medicines</li>
+		<li>Band-Aids and bandages</li>
+	</ul>
 
-<div> For our Health </div>
-<ul>
-	<li> Medicines </li>
-	<li> Band-Aids and bandages </li>
-</ul>
-
-<div> How Donations Are Used </div>
-<div> It costs about 500 rupees to support a child each month. That’s 16.6 rupees a day or 6,000 rupees a year, 
-	and it covers the child’s education, food, clothing, and medical supplies.
+	<h5> How Donations Are Used </h5>
+	<p> It costs about <span class="emphasis">500</span> rupees to support a child each month. That’s <span class="emphasis">16.6</span> rupees a day or <span class="emphasis">6,000</span> rupees a year, 
+		and it covers the child’s education, food, clothing, and medical supplies.
+	</p>
 </div>
 <% end %>
 
 <% content_for(:right_column) do %>
-	<div class="slideshow"> 
-		<% @photo_set.each do |photo| %>
-			<div style="text-align: center">
-				<img src="<%= photo.path %>" width="200" height="200" />
-				<span><%= photo.caption %></span>
-			</div>
-		<% end %>	
+	<div class="textarea" id="sabinha-photo">
+		<img src="images/sabinha.jpg" alt="Sabinha" />
 	</div>
 <% end %>

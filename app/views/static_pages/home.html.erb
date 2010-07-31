@@ -1,14 +1,14 @@
 <% content_for(:page_identifier) do %>home<% end %>
 
 <% content_for(:read_more) do %>
-	<div id="more" class="highlight_container">
+	<div id="more" class="textarea">
 		We are Angels Orphanage, a volunteer-run orphanage in Bangalore, India. 
 		Our mission is to provide the shelter, education, medical attention, and love that every child deserves. 
 	</div>
 <% end %>
 
 <% content_for(:main_content) do %>
-	<div class="slideshow"> 
+	<div class="slideshow" id="home_slideshow"> 
 		<% @photo_set.each do |photo| %>
 			<div style="text-align: center">
 				<img src="<%= photo.path %>" />
@@ -19,7 +19,7 @@
 <% end %>
 
 <% content_for(:right_column) do %>
-	<div id="at-a-glance" class="highlight_container">
+	<div id="at-a-glance" class="textarea">
 		<h1>At a Glance...</h1>
 		<ul>
 			<li>Located in Shivajinagar, Bangalore</li>
