@@ -1,27 +1,27 @@
-<% content_for(:page_identifier) do %>contact_us<% end %>
+<% content_for(:page_identifier) do %>contact-us<% end %>
 
 <% content_for(:right_column) do %>
-	<div class="slideshow"> 
-		<% @photo_set.each do |photo| %>
-			<div style="text-align: center">
-				<img src="<%= photo.path %>" width="200" height="200" />
-				<span><%= photo.caption %></span>
-			</div>
-		<% end %>	
-	</div>
 <% end %>
 
-<%content_for(:main_content) do %>
-	<h2>Contact Us</h2>
-	
-	<p>E-mail: Steve_sam@056@gmail.com </p>
-		
-	<div> Phone: (080) 65348406 – Orphanage </div>
-	<div> 9901540582 – Sabina Solomon </div>
-	
-	<p>	
-		<div> Address: Angels Orphanage </div>
-		<div> Anath Ashram, Old Cemetery Road </div>
-		<div> Shivajinagar Bangalore 51 </div>
-	</p>
+<% content_for(:main_content) do %>
+	<div class="textarea">
+		<h2>Contact Us</h2>
+		<table>
+			<tr>
+				<td class="label">E-mail:</td>
+				<td class="value">steve_sam056@gmail.com</td>
+			</tr>
+			<tr>
+				<td class="label" id="phone" rowspan="2">Phone:</td>
+				<td class="value">Orphanage - (080) 65348406</td>
+			</tr>
+			<tr><td class="value">Sabina Solomon - 9901540582</td></tr>
+			<tr>
+				<td class="label" rowspan="3">Address:</td>
+				<td class="value">Angels Orphanage</td>
+			</tr>
+			<tr><td>Anath Ashram, Old Cemetery Road</td></tr>
+			<tr><td>Shivajinagar Bangalore 51</td></tr>
+		</table>
+	</div>
 <% end %>
