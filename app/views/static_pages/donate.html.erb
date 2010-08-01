@@ -1,8 +1,13 @@
 <% content_for(:page_identifier) do %>donate<% end %>
 
 <% content_for(:right_column) do %>
-	<div class="textarea" id="sabinha-photo">
-		<img src="images/sabinha.jpg" alt="Sabinha" />
+	<div class="slideshow"> 
+		<% @photo_set.each do |photo| %>
+			<div style="text-align: center">
+				<img src="<%= photo.path %>" />
+				<span><%= photo.caption %></span>
+			</div>
+		<% end %>	
 	</div>
 <% end %>
 

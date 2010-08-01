@@ -98,8 +98,7 @@ h5 {
 	width: 292px;
 }
 
-#about-us #right-column .textarea,
-#how-you-can-help #right-column .textarea{
+#about-us #right-column .textarea {
 	height: 456px;
 }
 
@@ -148,6 +147,12 @@ h5 {
 #home .slideshow {
 	height: 420px; 
 	width: 610px; 
+}
+
+#how-you-can-help .slideshow,
+#donate .slideshow {
+	height: 486px;
+	width: 322px;
 }
 
 .slideshow img { 
