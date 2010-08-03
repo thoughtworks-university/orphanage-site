@@ -1,6 +1,6 @@
 body { 
 	font-family: arial, helvetica, clean, sans-serif;
-	background-color: #505050;
+	background: #858585 url(/images/body-background.png) top left repeat-x;
 	margin: 20px;
 	color: black;
 	font-size: 14px;
@@ -31,22 +31,16 @@ h5 {
 }
 
 #header { 
-  background-color: #680000; 
+	background: #7b130a url(/images/header.png) bottom left no-repeat; 
   color: white;
   text-align: center;
   height: 80px;
   padding: 10px;
 }
 
-#title {
-	width: 482px;
-	margin: 0 auto;
-}
-
 #title h1 {
 	font-size: 3em;
 	color: white;
-	float: left;
 	margin-bottom: 0;
 	margin-top: 20px;
 }
@@ -126,7 +120,7 @@ h5 {
 }
 
 #footer { 
-  background-color: #680000; 
+  background: #7b130a url(/images/footer.png) top left no-repeat; 
 	border-top: 1px solid #666666;
   color: #fff;
   text-align: center;
