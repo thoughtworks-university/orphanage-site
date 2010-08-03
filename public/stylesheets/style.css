@@ -20,6 +20,10 @@ h5 {
 	font-size: 16px;
 }
 
+.center {
+  text-align: center;
+}
+
 #container {
 	margin: 0 auto; 
 	width: 947px; 
@@ -67,6 +71,7 @@ h5 {
 	clear: both;
 	padding: 15px 15px 25px 15px;
 	position: relative;
+  min-height: 550px;
 }
 
 #main {
@@ -236,3 +241,9 @@ h5 {
 .ui-tabs .ui-tabs-panel {
 	padding-bottom: 25px;
 }
+
+#donate_us a:visited {
+  color:transparent;
+  text-decoration:none;
+}
+
