@@ -49,9 +49,11 @@
 					
 				<div id="right-column">
 					<%= yield :right_column %>
+					<!--
           <div id="donate_us" class="center">
             <a href="/donate"><img src="/images/donate.png" /></a>
           </div>
+					-->
 				</div>
 			
 				<div id="main">
@@ -61,12 +63,23 @@
 
 			<div id="footer"> 
 				<a href="contact-us">Contact Us</a>
-				<div id="contact">
-					<div>E-mail: steve_sam056@gmail.com</div>
-					<div>Phone: (080) 65348406 – Orphanage</div>	
-					<div>Anath Ashram, Old Cemetery Road</div>
-					<div>Shivajinagar Bangalore 51</div>
-				</div>
+				<table class="contact-details">
+					<tr>
+						<td class="label">E-mail:</td>
+						<td class="value">steve_sam056@gmail.com</td>
+					</tr>
+					<tr>
+						<td class="label">Phone:</td>
+						<td class="value">(080) 65348406</td>
+					</tr>
+					<tr>
+						<td class="label" rowspan="2">Address:</td>
+						<td class="value">Anath Ashram, Old Cemetery Road</td>
+					</tr>
+					<tr>
+						<td class="value">Shivajinagar Bangalore 51</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</body>
