@@ -21,7 +21,20 @@
 				$('.slideshow').corner("15px");
 				$('.textarea').corner("15px")
 			});
+		</script>
+		<!--[if IE]>
+		<script type="text/javascript"> 
+			$(document).ready(function() {
+				$('#at-a-glance').uncorner();
+				$('#more').uncorner();
+				$('#header').uncorner();
+				$('#container').uncorner();
+				$('#footer').uncorner();
+				$('.slideshow').uncorner();
+				$('.textarea').uncorner();
+			});
 		</script> 
+		<![endif]-->
 	</head> 
 	<body id="<%= yield :page_identifier %>">
 		<div id="container"> 
