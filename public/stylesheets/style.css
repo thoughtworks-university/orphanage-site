@@ -41,16 +41,8 @@ h5 {
   padding: 10px;
 }
 
-#title h1 {
-	font-size: 3em;
-	color: white;
-	margin-bottom: 0;
-	margin-top: 15px;
-}
-
 #title img {
-	display: inline;
-	float: left;
+	
 }
 
 #title a {
