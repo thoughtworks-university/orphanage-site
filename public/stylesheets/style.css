@@ -24,6 +24,10 @@ h5 {
   text-align: center;
 }
 
+a {
+	color: black;
+}
+
 #container {
 	margin: 0 auto; 
 	width: 947px; 
